@@ -9,8 +9,8 @@ const quoteText = document.querySelector(".quote"),
 function randomQuote() {
     quoteBtn.classList.add("loading");
     quoteBtn.innerText = "Loading Quote...";
-    fetch("https://api.quotable.io/random").then(response => response.json()).then(result => {
-        quoteText.innerText = result.content;
+    fetch("https://thequoteshub.com/api/random-quote").then(response => response.json()).then(result => {
+        quoteText.innerText = result.text;
         authorName.innerText = result.author;
         quoteBtn.classList.remove("loading");
         quoteBtn.innerText = "New Quote";
