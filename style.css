@@ -60,7 +60,6 @@ header, .content :where(i, p, span) {
 .quote-area .quote {
     font-size: 22px;
     text-align: center;
-    word-break: break-all;
 }
 
 .content .author {
